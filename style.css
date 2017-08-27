@@ -1,0 +1,446 @@
+﻿/* GLOBAL STYLES */
+
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+    body a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+        body a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+hr.style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#frontBg {
+    height: 100vh;
+    width: 100%;
+    background-color: #240D31;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    position: relative;
+    bottom: 0;
+}
+
+.bgShade {
+    background-color: rgba(60, 55, 62, 0.59);
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.centerContent {
+    height: 100%;
+    text-align: center;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: table-row;
+    line-height: 1.6;
+}
+
+.myLogo {
+    width: 90px;
+    height: 90px;
+    margin-top: 40px;
+}
+
+.pageScroll {
+    text-align: center;
+    margin-bottom: 2.5%;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 300;
+    color: #93a4aa;
+    transition: all .3s ease-in-out;
+}
+
+    .pageScroll :hover {
+        font-size: 1.2rem;
+        transition: font-size .3s ease-in-out;
+    }
+
+#headTxt {
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    /*letter-spacing: .1em;*/
+}
+
+.showBr {
+    display: inline;
+}
+
+.typeSet {
+    background: none;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.headTxtContainer {
+    margin-top: 150px;
+    margin-bottom: auto;
+}
+
+/* Typewriter STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid;
+    border-right-color: #70288F; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .1em;*/ /* Adjust as needed */
+    animation: typing 2.0s steps(20, end), blink-caret .5s step-end infinite, blueBackgroud 3.3s forwards;
+    /*font-weight: 300;*/
+    font-size: inherit;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #70288F;
+    }
+}
+
+@keyframes blueBackgroud {
+    99.9% {
+        background: none;
+    }
+
+    100% {
+        background: #A264BE;
+    }
+}
+
+
+/* class to hide content */
+.txtHidden {
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    display: none;
+}
+
+/* class to show content */
+.Showing {
+    opacity: 1;
+    z-index: 2;
+    display: block;
+    background-color: none;
+}
+
+
+@media screen and (min-width: 550px) {
+    #frontBg {
+        background-image: url(Images/laptopBg.jpg);
+    }
+
+    .centerContent {
+        padding: 0 40px;
+    }
+
+    #headTxt {
+        font-size: 2.3rem;
+        line-height: 1.6;
+    }
+
+    .typeSet {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (min-width : 750px) {
+    #frontBg h1 {
+        font-size: 3rem;
+    }
+
+    #headTxt .showBr {
+        display: none;
+    }
+}
+
+
+#abtMe {
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    width: 85%;
+    text-align: center;
+}
+
+.expertiseTxt {
+    text-align: center;
+    margin: 30px auto;
+    margin-top: 100px;
+    font-size: 1.5rem;
+}
+
+    .expertiseTxt h2 {
+        font-size: 3rem;
+        color: #000;
+    }
+
+.expertBottom {
+    margin-bottom: 30px;
+}
+
+.expertiseTxt .fa-cog {
+    margin: 0 3px;
+    color: #A264BE;
+}
+
+.expertContent {
+    margin-top: 50px;
+}
+
+    .expertContent p {
+        font-size: 1.4rem;
+        color: #A4A4A4;
+    }
+
+    .expertContent .fa {
+        margin-bottom: 10px;
+        color: #A264BE;
+    }
+
+.lastContent {
+    margin-bottom: 50px;
+}
+
+#myWork {
+    background-color: #f1f1f1; /*#240D31*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+    #myWork h2 {
+        color: #000;
+        font-size: 3rem;
+        margin: 50px auto;
+        margin-top: 100px;
+    }
+
+    #myWork .card {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: 500px;
+        position: initial;
+    }
+
+    #myWork .card-img-top {
+        height: 50%;
+        width: 100%;
+    }
+
+
+
+.workPad {
+    padding: 50px 0 50px 0;
+}
+
+.card-text {
+    color: #A4A4A4;
+}
+
+.btn {
+    background-color: #70288F;
+}
+
+#myWork .btn {
+    margin-top: 50px;
+}
+
+
+.form-horizontal {
+    width: 80%;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 550px) {
+    .form-horizontal {
+        width: 95%;
+    }
+}
+
+#contactForm {
+    text-align: center;
+    color: #fff;
+    background: #240D31;
+}
+
+.form-horizontal {
+    margin: 0 auto;
+}
+
+    .form-horizontal .fa {
+        color: #fff;
+    }
+
+
+
+.contactHead {
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    margin-top: 100px;
+    font-size: 3rem;
+}
+
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+
+
+.headPara {
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+
+.form-control {
+    background-color: #240D31;
+    border-color: #09010E;
+}
+
+    .form-control:focus {
+        background-color: #240D31;
+        border-color: #09010E;
+        color: #fff;
+    }
+
+
+.input-group-addon {
+    background: #594067;
+}
+
+
+#comment {
+    font-size: 1.2rem;
+}
+
+    #comment:focus {
+        color: #fff;
+    }
+
+.form-row .btn {
+    background: #594067;
+    border-color: #09010E;
+}
+
+    .form-row .btn:hover {
+        background: #09010E;
+        border-color: #594067;
+    }
+
+#footer {
+    background: #1b131f;
+    min-height: 400px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+    #footer span img {
+        width: 30px;
+        height: 30px;
+        margin: 10px auto;
+    }
+
+
+.socialMedia {
+    width: 50px;
+    height: 50px;
+    background-color: #27232A;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 3px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .socialMedia:hover {
+        background-color: #6c6171;
+        width: 60px;
+        height: 60px;
+        transition: all .3s ease-in-out;
+    }
+
+#footer .socialMedia:hover img {
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease-in-out;
+}
+
+#footer .container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#footer .row {
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+}
+
+
+.footerTxt {
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+#footer .myLogo {
+    margin-top: 100px;
+}
+
+.watsapp {
+    display: none;
+}
+
+.socialMedia:hover .watsapp {
+    display: inline;
+}
